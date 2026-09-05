@@ -1,0 +1,24 @@
+{
+  "name": "auto-translate",
+  "version": "0.1.0",
+  "description": "Simple automatic translation for JavaScript applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "translation",
+    "translate",
+    "i18n",
+    "localization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "typescript": "^7.0.2"
+  }
+}
