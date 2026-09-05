@@ -7,5 +7,5 @@ export async function translate(
 ): Promise<string> {
   const config = getConfig();
 
-  return googleTranslate(options);
+  return googleTranslate(options, config);
 }
