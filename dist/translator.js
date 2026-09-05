@@ -1,4 +1,6 @@
-import { googleTranslate } from './providers/google';
+import { googleTranslate } from "./providers/google";
+import { getConfig } from "./config";
 export async function translate(options) {
-    return await googleTranslate(options);
+    const config = getConfig();
+    return googleTranslate(options);
 }

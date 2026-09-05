@@ -1,7 +1,11 @@
-import {googleTranslate} from './providers/google';
-import { TranslationOptions } from './types';
+import { googleTranslate } from "./providers/google";
+import { getConfig } from "./config";
+import { TranslationOptions } from "./types";
 
+export async function translate(
+  options: TranslationOptions
+): Promise<string> {
+  const config = getConfig();
 
-export async function translate(options: TranslationOptions): Promise<string> {
-    return await googleTranslate(options);
+  return googleTranslate(options);
 }
