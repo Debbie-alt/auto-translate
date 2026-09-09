@@ -1,4 +1,4 @@
-import { TranslationOptions, TranslationConfig } from "../types";
+import { TranslationOptions, TranslationConfig } from "../types.js";
 
 export async function googleTranslate(
   options: TranslationOptions,

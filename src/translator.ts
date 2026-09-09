@@ -1,6 +1,6 @@
-import { googleTranslate } from "./providers/google";
-import { getConfig } from "./config";
-import { TranslationOptions } from "./types";
+import { googleTranslate } from "./providers/google.js";
+import { getConfig } from "./config.js";
+import { TranslationOptions } from "./types.js";
 
 export async function translate(
   options: TranslationOptions

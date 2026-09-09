@@ -1,4 +1,4 @@
-import { TranslationConfig } from "./types";
+import { TranslationConfig } from "./types.js";
 
 let config: TranslationConfig | null = null;
 
