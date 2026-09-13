@@ -1,8 +1,11 @@
+/// <reference types="node" />
+
+import "dotenv/config";
 import { configure, translate } from "../src/index.js";
 
 configure({
-  provider: "google",
-  apiKey: "test-key",
+  provider: "deepl",
+  apiKey: process.env.DEEPL_API_KEY!,
 });
 
 const result = await translate({
