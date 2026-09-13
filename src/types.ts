@@ -1,4 +1,4 @@
-export type TranslationProvider = "google";
+export type TranslationProvider = "deepl";
 
 export type TranslationConfig = {
   provider: TranslationProvider;
