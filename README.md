@@ -16,10 +16,14 @@ Configure the translation provider once when your application starts:
 import { configure } from "auto-translate";
 
 configure({
-  provider: "google",
-  apiKey: "YOUR_API_KEY",
+  provider: "deepl",
+  apiKey: "YOUR_DEEPL_API_KEY",
 });
 ```
+
+`auto-translate` currently uses the DeepL API for translations.
+
+> **Security:** Keep your DeepL API key private. Do not expose it in client-side or browser code. For production applications, configure `auto-translate` in a secure server-side environment.
 
 ## Translate text
 
