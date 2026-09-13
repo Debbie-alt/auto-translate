@@ -1,4 +1,4 @@
-import { googleTranslate } from "./providers/google.js";
+import { deeplTranslate } from "./providers/deepl.js";
 import { getConfig } from "./config.js";
 import { TranslationOptions } from "./types.js";
 
@@ -7,5 +7,5 @@ export async function translate(
 ): Promise<string> {
   const config = getConfig();
 
-  return googleTranslate(options, config);
+  return deeplTranslate(options, config);
 }

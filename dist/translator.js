@@ -1,6 +1,6 @@
-import { googleTranslate } from "./providers/google.js";
+import { deeplTranslate } from "./providers/deepl.js";
 import { getConfig } from "./config.js";
 export async function translate(options) {
     const config = getConfig();
-    return googleTranslate(options, config);
+    return deeplTranslate(options, config);
 }
