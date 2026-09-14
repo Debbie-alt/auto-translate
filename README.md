@@ -1,11 +1,11 @@
-# auto-translate
+# @debbie-alt/translatekit
 
 Simple automatic translation for JavaScript and React applications.
 
 ## Installation
 
 ```bash
-npm install auto-translate
+npm install @debbie-alt/translatekit
 ```
 
 ## Configuration
@@ -13,7 +13,7 @@ npm install auto-translate
 Configure the translation provider once when your application starts:
 
 ```ts
-import { configure } from "auto-translate";
+import { configure } from "@debbie-alt/translatekit";
 
 configure({
   provider: "deepl",
@@ -21,16 +21,16 @@ configure({
 });
 ```
 
-`auto-translate` currently uses the DeepL API for translations.
+`@debbie-alt/translatekit` currently uses the DeepL API for translations.
 
-> **Security:** Keep your DeepL API key private. Do not expose it in client-side or browser code. For production applications, configure `auto-translate` in a secure server-side environment.
+> **Security:** Keep your DeepL API key private. Do not expose it in client-side or browser code. For production applications, configure `@debbie-alt/translatekit` in a secure server-side environment.
 
 ## Translate text
 
 Use the `translate` function anywhere in your application:
 
 ```ts
-import { translate } from "auto-translate";
+import { translate } from "@debbie-alt/translatekit";
 
 const result = await translate({
   text: "Hello world",
@@ -42,10 +42,10 @@ console.log(result);
 
 ## React
 
-`auto-translate` also provides an `Autotranslate` component for React applications:
+`@debbie-alt/translatekit` also provides an `Autotranslate` component for React applications:
 
 ```tsx
-import { Autotranslate } from "auto-translate";
+import { Autotranslate } from "@debbie-alt/translatekit";
 
 function App() {
   return (
@@ -75,9 +75,9 @@ The component automatically translates its text when the target language changes
 | `provider` | `string` | Yes      |
 | `apiKey`   | `string` | Yes      |
 
-## Why auto-translate?
+## Why @debbie-alt/translatekit?
 
-`auto-translate` is designed to provide a simple developer experience for applications that need runtime translation without building a large internationalization system.
+`@debbie-alt/translatekit` is designed to provide a simple developer experience for applications that need runtime translation without building a large internationalization system.
 
 It provides:
 
